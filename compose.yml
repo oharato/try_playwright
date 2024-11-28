@@ -1,0 +1,11 @@
+services:
+  my-playwright-app:
+    image: my-playwright-app
+    build:
+      context: .
+      args:
+        UID: ${UID}
+        GID: ${GID}
+    volumes:
+      - ./output:/app/output
+    command: ["npx", "ts-node", "index.ts"]
