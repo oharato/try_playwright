@@ -17,6 +17,8 @@ jobs:
 
       - name: Build with Docker Compose
         run: |
+          rm .env
+          echo -e "UID=$(id -u)\nGID=$(id -g)" > .env
           docker compose up
 
       - name: Copy generated HTML
