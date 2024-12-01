@@ -1,5 +1,7 @@
 playwrightでスクレイピング
 
+https://oharato.github.io/try_playwright/example.png
+
 ## first time
 
 docker compose up --build
